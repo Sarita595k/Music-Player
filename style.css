@@ -1,0 +1,392 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-shadow: none;
+    overflow-x: hidden;
+}
+
+#hero-section-video {
+    height: 100vw;
+    width: 100%;
+    margin-top: -30%;
+    transform: scaleX(-1);
+    position: relative;
+    z-index: 1;
+    clip-path: polygon(0 0, 100% 0, 100% 75%, 0 85%);
+}
+
+#overlay {
+    height: 100vh;
+    width: 100%;
+    background-image: url('./images/background-layer-1-1.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.8;
+    position: absolute;
+    z-index: 21;
+    top: 0;
+}
+
+#navigation-bar {
+    font-family: "Montserrat", serif;
+    font-weight: 200;
+    position: relative;
+    z-index: 23;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo a {
+    color: white;
+    text-transform: capitalize;
+    text-decoration: none;
+    font-size: 2.7rem;
+    margin-left: .5rem;
+}
+
+.logo::before {
+    content: '\f025';
+    color: white;
+    font-size: 3rem;
+    font-family: FontAwesome;
+}
+
+#navigation-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    list-style-type: none;
+    font-size: 1.3rem;
+}
+
+.list-item a {
+    color: white;
+    padding: 0 2rem;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all 2s ease-in-out;
+}
+
+.list-item a:hover {
+    background: linear-gradient(25deg, rgba(130, 204, 214, 1) 8%, rgba(53, 119, 221, 1) 26%, rgba(24, 151, 228, 1) 54%, rgba(16, 60, 215, 1) 69%, rgba(0, 174, 187, 1) 100%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+#main-heading {
+    width: 70%;
+    height: 70%;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* background-image: url('./images/background_triangle.jpg'); */
+    /* background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; */
+    color: white;
+    z-index: 25;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* margin: 3rem; */
+}
+
+#sub-heading h1 {
+    margin-bottom: 5rem;
+    text-transform: uppercase;
+    font-size: 2rem;
+}
+
+#heading h1 {
+    font-size: 12rem;
+    margin: 0;
+    font-family: "Roboto Serif", serif;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+#heading i {
+    color: #F6037E;
+}
+
+#heading-description {
+    width: 70%;
+    text-align: center;
+}
+
+#heading-description p {
+    font-size: 2rem;
+    font-family: "Open Sans", serif;
+    font-weight: 100;
+    text-transform: lowercase;
+}
+
+#heading-description p span {
+    text-transform: capitalize;
+    font-weight: 800;
+}
+
+#heading-description p::first-letter {
+    text-transform: uppercase;
+}
+
+#heading-btn button {
+    margin-top: 2rem;
+    font-size: 1.7rem;
+    background-color: #F6037E;
+    color: white;
+    border: none;
+    padding: 1.3rem 2rem;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    border-radius: 3rem;
+}
+
+#heading-btn button i {
+    margin-right: 1rem;
+}
+
+/* section 2 latest album */
+#albums-section {
+    margin-top: -28%;
+    padding: 20% 0;
+    background: linear-gradient(25deg, rgba(47, 1, 147, 1) 0%, rgba(49, 0, 84, 1) 100%);
+    position: relative;
+}
+
+#albums,
+#upcoming-events,
+#artist {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+#album-subheading h2,
+#upcoming-events h2,
+#artist-subheading h2 {
+    font-family: "Roboto Serif", serif;
+    font-size: 1.7rem;
+    text-transform: uppercase;
+}
+
+#album-heading,
+#upcoming-events,
+#artist-heading {
+    margin: 2rem;
+}
+
+#album-heading h1,
+#upcoming-events h1,
+#artist-heading h1 {
+    font-family: "Montserrat", serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 4.5rem;
+    margin: 0;
+    padding: .3rem;
+}
+
+#album-heading hr,
+#artist-heading hr {
+    border: .2rem solid #F6037E;
+}
+
+#album-description,
+#upcoming-description,
+#artist-description {
+    width: 60%;
+    text-align: center;
+    font-size: 2rem;
+}
+
+#albums-section-carousel {
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10%;
+}
+
+#albums-card-container {
+    width: 100%;
+    overflow: hidden;
+}
+
+#albums-card-div {
+    width: 100%;
+    display: flex;
+    padding: 2.3rem;
+}
+
+.card {
+    display: flex;
+    flex: 0 0 30%;
+    flex-direction: column;
+    padding: 2.3rem;
+    box-sizing: border-box;
+}
+
+.card img {
+    height: 30rem;
+    width: 30rem;
+    /* object-fit: cover; */
+}
+
+#albums-section-carousel button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    /* background-color: transparent; */
+    border: none;
+    cursor: pointer;
+    font-size: 2rem;
+    color: #333;
+    background-color: white;
+}
+
+/* upcoming events section begins here  */
+#upcoming-events-section {
+    margin-top: -10%;
+    padding: 15%;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 1) 39%, rgba(140, 13, 255, 1) 100%);
+    clip-path: polygon(0 0%, 100% 10%, 100% 120%, 0 100%);
+}
+
+#upcoming-subheading h2 {
+    color: #FF0D51;
+    text-shadow: -1px 3px 11px #FF0D51;
+}
+
+#upcoming-heading hr {
+    border: .2rem solid #FF005D;
+}
+
+#events-overlay {
+    position: relative;
+    margin-top: 5%;
+    height: 55vh;
+    width: 85vw;
+    background-image: url('./images/events-overlay.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: .7;
+}
+
+#events-bg-description {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 19%;
+    text-transform: uppercase;
+    color: white;
+}
+
+#bg-description-btn button {
+    text-transform: uppercase;
+    color: white;
+    background-color: #ff0d51;
+    border: none;
+    padding: .6rem 1rem;
+    margin-bottom: 2rem;
+}
+
+#bg-description-date span {
+    font-family: "Montserrat", serif;
+    font-weight: 200;
+    opacity: .7;
+    font-size: 1.7rem;
+}
+
+#bg-description-two-btns button {
+    margin-top: 3rem;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.event-details {
+    color: white;
+    background-color: #11cdd4;
+    padding: 1rem 1.3rem;
+    border-radius: .7rem;
+    margin-right: 2rem;
+    border: none;
+    transition: all .5s ease;
+}
+
+.event-details:hover {
+    background-color: #136e70;
+}
+
+.buy-tickets {
+    color: white;
+    padding: 1rem 1.3rem;
+    border-radius: .7rem;
+    background: transparent;
+    border: .1rem solid #ff0d51;
+    transition: all .5s ease-in-out;
+}
+
+.buy-tickets::before {
+    content: '\f07a';
+    font-family: FontAwesome;
+    margin-right: .3rem;
+}
+
+.buy-tickets:hover {
+    color: #FF0D51;
+}
+
+#events-bg-description hr {
+    width: 5rem;
+    border: .3rem solid #FF0D51;
+    margin-top: 2rem;
+}
+
+/* artist section begins here  */
+#artist-section {
+    height: 100vh;
+    margin-top: -10%;
+    background: linear-gradient(25deg, rgba(47, 1, 147, 1) 0%, rgba(49, 0, 84, 1) 100%);
+    clip-path: polygon(50% 0%, 100% 0, 100% 66%, 50% 100%, 0 66%, 0 0);
+}
+
+#artist-overlay {
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    background-attachment: fixed;
+    background-image: url('./images/artist-background-overlay.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.2;
+    /* z-index: 21; */
+}
+
+#artist {
+    display: flex;
+    padding-top: 12%;
+}
+
+/* playlist section begins here  */
+#playlist {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
