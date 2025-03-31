@@ -240,6 +240,7 @@ body {
     box-sizing: border-box;
 }
 
+/* card image designing  */
 .card img {
     height: 30rem;
     width: 30rem;
