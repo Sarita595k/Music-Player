@@ -101,3 +101,4 @@ songs.forEach(song => {
     albumsCardDiv.append(card)
 })
 albumsSection.append(albumsCardDiv)
+// albums section ends here 
